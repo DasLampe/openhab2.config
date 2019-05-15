@@ -1,0 +1,4 @@
+Switch Wz_Light_Power "Power Stehlampe" <light> { channel="tradfri:0210:gwa0c9a0d7ca7f:65537:color" }
+Number Wz_Light_Scene "Scenes" <light>
+Dimmer Wz_Light_Brightness "Brightness Stehlampe" <light> { channel="tradfri:0210:gwa0c9a0d7ca7f:65537:color" } 
+Color Wz_Light_Color "Color Stehlampe" <light> { channel="tradfri:0210:gwa0c9a0d7ca7f:65537:color_temperature" }

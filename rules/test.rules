@@ -1,0 +1,23 @@
+rule "Test rule"
+when
+	Item Wz_Light_Scene received command
+then
+	logInfo('org.openhab.rules.lights', 'Received cmd: ' + receivedCommand)
+	switch(receivedCommand) {
+		case 0: { //Focus
+			Wz_Light_Color.sendCommand(30)
+			Thread::sleep(600)
+			Wz_Light_Brightness.sendCommand(100)
+		}
+		case 1: { // Normal
+			Wz_Light_Color.sendCommand(50)
+			Thread::sleep(600)
+			Wz_Light_Brightness.sendCommand(80)
+		}
+		case 2: { //Relax
+			Wz_Light_Color.sendCommand(100)
+			Thread::sleep(600)
+			Wz_Light_Brightness.sendCommand(30)
+		}
+	}
+end

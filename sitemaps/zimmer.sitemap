@@ -1,0 +1,7 @@
+sitemap zimmer label="Mein Zimmer auf der Gipsburgs" {
+	Frame label="Stehlampe" {
+		Switch item=Wz_Light_Power label="Power"
+		Switch item=Wz_Light_Scene label="Scene" mappings=[0="Focus", 1="Normal", 2="Chill"]
+		Default item=Wz_Light_Color label="Color"
+	}
+}
